@@ -2,13 +2,12 @@
 select * from retail_sales
 limit 10
 
-
 --number of record 
 select count(*) from retail_sales
 
----------------------------
---   DATA CLEANING
----------------------------
+--------------------------------
+--            DATA CLEANING
+-------------------------------
 
 --check if there is  null value
 select * from retail_sales 
@@ -97,6 +96,7 @@ and
 quantiy >= '4'
 and
 to_char(sale_date, 'yyyy-mm') = '2022-11'
+  
 --calculate the totla sales (total_sale) for each category
 --find  average age of customers who purchaseditems from 'beauty' category
 select
